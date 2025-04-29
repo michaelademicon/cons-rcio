@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consórcio Ademicon - Realize seus sonhos com a maior administradora independente de consórcios do Brasil.">
+    <title>Consórcio Ademicon</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #D91C2D;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        header img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .hero {
+            background: url('imagem-fundo.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #FFD700;
+            color: #D91C2D;
+            padding: 15px 30px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 250px;
+        }
+
+        .card h3 {
+            color: #D91C2D;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .testimonials {
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .form-section {
+            background-color: #D91C2D;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-section form input,
+        .form-section form button {
+            padding: 15px;
+            font-size: 18px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
+
+        .form-section form button {
+            background-color: #FFD700;
+            color: #D91C2D;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-ademicon.png" alt="Ademicon Logo">
+    <p>Consórcio Ademicon - Realize seu sonho com segurança e confiança</p>
+</header>
+
+<section class="hero">
+    <h1>Realize Seus Sonhos com o Consórcio que Mais Cresce no Brasil!</h1>
+    <p>Invista em imóveis, veículos ou serviços com a maior administradora independente de consórcios do Brasil.</p>
+    <a href="#formulario" class="cta-button">Simule seu Consórcio</a>
+</section>
+
+<section class="section">
+    <h2>A Maior Administradora Independente de Consórcios do Brasil</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Mais de 30 anos de experiência</h3>
+            <p>Tradição e confiabilidade no mercado de consórcios.</p>
+        </div>
+        <div class="card">
+            <h3>R$ 57,5 bilhões sob gestão</h3>
+            <p>Gestão sólida e segura para seu investimento.</p>
+        </div>
+        <div class="card">
+            <h3>Presença em todo o Brasil</h3>
+            <p>Com mais de 214 unidades, estamos perto de você.</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="testimonial">
+        "Com a Ademicon conquistei meu primeiro imóvel!" — Ana, São Paulo
+    </div>
+    <div class="testimonial">
+        "Foi muito mais fácil comprar meu carro novo com o consórcio." — Lucas, Curitiba
+    </div>
+    <div class="testimonial">
+        "Segurança, transparência e suporte incrível!" — Fernanda, Belo Horizonte
+    </div>
+</section>
+
+<section class="form-section" id="formulario">
+    <h2>Faça Sua Simulação Gratuita</h2>
+    <form action="#">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Telefone" required>
+        <select required>
+            <option value="imoveis">Consórcio Imóveis</option>
+            <option value="veiculos">Consórcio Veículos</option>
+            <option value="servicos">Consórcio Serviços</option>
+        </select>
+        <button type="submit">Simular Agora</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Ademicon. Todos os direitos reservados.</p>
+    <a href="#">Sobre</a> | <a href="#">Política de Privacidade</a> | <a href="#">Contato</a>
+</footer>
+
+</body>
+</html>
